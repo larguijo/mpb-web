@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  gap: 30px;
+}
+
+.logo {
+  margin: 5px 20px;
+  border-radius: 50%;
+}
+
+.navigation {
+  flex-grow: 1;
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "day": "Miercoles",
+    "eventName": "Culto de media semana",
+    "time": "6:30 PM"
+  },
+  { "day": "Viernes", "eventName": "Culto de Jovenes", "time": "6:30 PM" },
+  {
+    "day": "Domingo",
+    "eventName": "Culto Dominical",
+    "time": "9:00 AM y 12:00 PM"
+  }
+]

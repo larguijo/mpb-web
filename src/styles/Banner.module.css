@@ -1,0 +1,39 @@
+.banner {
+  height: 70vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.bannerTextContainer {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.bannerTextContainer h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bannerTextContainer h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}

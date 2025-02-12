@@ -1,0 +1,17 @@
+.navigation {
+  height: 80px;
+  padding-bottom: 2px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  gap: 20px;
+  margin-right: 50px;
+}
+
+.navigation .navigationItem {
+  padding: 30px 20px;
+}
