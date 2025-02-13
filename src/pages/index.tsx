@@ -1,20 +1,9 @@
 import Head from "next/head";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Container, Grid, Col, Row, Text, Panel } from "rsuite";
+import { Container } from "rsuite";
 import Banner from "@/components/Banner";
 import Schedules from "@/components/Schedules";
 import styles from "@/styles/Home.module.css";
 import events from "@/data/events.json";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const translations = {
   pageTitle: "Casa de Oración Belén – Adorando a Dios desde el corazón de Bruselas",
