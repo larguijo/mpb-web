@@ -1,6 +1,7 @@
 .header {
   display: flex;
   gap: 30px;
+  background-color: white;
 }
 
 .logo {

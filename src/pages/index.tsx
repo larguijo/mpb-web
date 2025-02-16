@@ -1,17 +1,25 @@
 import Head from "next/head";
 import { Container } from "rsuite";
+import Address from "@/components/Address";
 import Banner from "@/components/Banner";
 import Schedules from "@/components/Schedules";
 import styles from "@/styles/Home.module.css";
 import events from "@/data/events.json";
 
 const translations = {
-  pageTitle: "Casa de Oración Belén – Adorando a Dios desde el corazón de Bruselas",
+  pageTitle:
+    "Casa de Oración Belén – Adorando a Dios desde el corazón de Bruselas",
   pageMetaDescription: "Casa de Oración Belén Bruselas",
   bannerTitle: "Casa de Oración Belén",
   bannerSubtitle: "2025: El año de la corrección",
-  bannerText: "Únete a la comunidad cristiana de habla hispana en Bruselas, Bélgica. Encuentra nuestros horarios, ubicación y servicios aquí. ¡Ven con tu familia y amigos a la familia de Dios!",
+  bannerText:
+    "Únete a la comunidad cristiana de habla hispana en Bruselas, Bélgica. ¡Ven con tu familia y amigos a la familia de Dios!",
   schedulesTitle: "Horarios",
+  addressTitle: "Visitanos",
+  addressAddress: "Chausee de Louvain 307, 1030 Schaerbeek",
+  addressMapAlt: "Mapa de la ubicacion de la iglesia",
+  addressRoutesTitle: "¿Cómo llegar en transporte público?",
+  addressRoutesText: "Puedes tomar cualquiera de las siguientes rutas y quedarte en la parada de buses DAILY",
 };
 
 export default function Home() {
@@ -36,6 +44,22 @@ export default function Home() {
               title={translations.schedulesTitle}
               events={events}
               className="container-secondary"
+            />
+            <Address
+              title={translations.addressTitle}
+              address={translations.addressAddress}
+              className="container-tertiary"
+              mapAlt={translations.addressMapAlt}
+              mapImg="/img/map.png"
+              mapLink="https://www.google.com/maps/place/Casa+de+Oraci%C3%B3n+Bel%C3%A9n/@50.8508172,4.3671904,14.63z/data=!4m14!1m7!3m6!1s0x47c3c3051f9a7ca9:0x5b582db9f8f09fbb!2sCasa+de+Oraci%C3%B3n+Bel%C3%A9n!8m2!3d50.8520104!4d4.385869!16s%2Fg%2F11h35pd13p!3m5!1s0x47c3c3051f9a7ca9:0x5b582db9f8f09fbb!8m2!3d50.8520104!4d4.385869!16s%2Fg%2F11h35pd13p?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"
+              routesText={translations.addressRoutesText}
+              routesTitle={translations.addressRoutesTitle}
+              routes={[
+                { route: "29", color: "orange" },
+                { route: "56", color: "yellow" },
+                { route: "61", color: "yellow" },
+                { route: "64", color: "red" },
+              ]}
             />
           </Container>
         </main>

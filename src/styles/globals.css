@@ -1,6 +1,8 @@
 :root {
   --background: #ffffff;
   --foreground: #ffffff;
+  --primary-color: #952435;
+  --secondary-color: #17283b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +49,10 @@ h3 {
   font-family: "Playfair Display", serif;
 }
 
+.rs-text {
+  color: white;
+}
+
 .container {
   padding: 40px;
   margin-right: auto;
@@ -60,13 +66,21 @@ h3 {
 }
 
 .container-primary {
-  background-color: #9B132B;
+  background-color: var(--primary-color);
   color: white;
 }
 
 .container-secondary {
-  background-color: #0E2334;
+  background-color: var(--secondary-color);
   color: white;
+}
+
+.container-tertiary {
+  background-color: white;
+  color: #898989;
+  .rs-text {
+    color: #898989;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -80,6 +94,8 @@ h3 {
   }
 }
 
-.rs-text {
-  color: white;
+.map {
+  max-width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }

@@ -24,7 +24,7 @@ const Schedules = ({ title, events = [], className }: SchedulesProps) => {
         </Row>
         <Row>
           {events.map(({ day, eventName, time }) => (
-            <Col key={day} sm={24} md={12} lg={8}>
+            <Col key={day} xs={24} md={12} lg={8}>
               <Panel header={day} shaded bordered className={styles.schedule}>
                 <Text size="md" weight="bold">
                   {eventName}
