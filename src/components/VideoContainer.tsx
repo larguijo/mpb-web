@@ -22,13 +22,14 @@ const VideoContainer = ({
         <Row>
           <Col xs={24} style={{ textAlign: "center" }}>
             <iframe
-              width="560"
-              height="315"
+              width="90%"
+              height="300"
               src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
               title={header}
               frameBorder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              style={{maxWidth: '600px'}}
             ></iframe>
           </Col>
         </Row>
