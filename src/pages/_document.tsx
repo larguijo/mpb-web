@@ -17,7 +17,7 @@ export default function Document() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Únete a la comunidad cristiana de habla hispana en Bruselas, Bélgica. Encuentra nuestros horarios, ubicación y servicios aquí. ¡Ven con tu familia y amigos a la familia de Dios!" />
-        <meta name="keywords" content="iglesia, Iglesia Evangélica Protestante, culto, servicios religiosos, Bélgica, Comunidad Cristiana, Bruselas" />
+        <meta name="keywords" content="iglesia, Iglesia Cristiana, Iglesia Evangélica Protestante, culto, servicios religiosos, Bélgica, Comunidad Cristiana, Bruselas, Maison de Priere Bethlehem" />
         <meta name="author" content="Casa de oración de Belén" />
         <link rel="canonical" href="https://casadeoracionbelen.be" />
       </Head>

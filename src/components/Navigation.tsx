@@ -4,8 +4,6 @@ import styles from "@/styles/Navigation.module.css";
 const navigationOptions = [
   { label: "Nuestra Iglesia", href: "/acerca-de" },
   { label: "Ministerios", href: "/ministerios" },
-  { label: "Actividades", href: "/calendario" },
-  { label: "Visitanos", href: "acerca-de" },
 ];
 const Navigation = () => {
   return (

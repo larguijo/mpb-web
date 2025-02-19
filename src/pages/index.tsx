@@ -3,6 +3,7 @@ import { Container } from "rsuite";
 import Address from "@/components/Address";
 import Banner from "@/components/Banner";
 import Schedules from "@/components/Schedules";
+import VideoContainer from "@/components/VideoContainer";
 import styles from "@/styles/Home.module.css";
 import events from "@/data/events.json";
 
@@ -19,7 +20,10 @@ const translations = {
   addressAddress: "Chausee de Louvain 307, 1030 Schaerbeek",
   addressMapAlt: "Mapa de la ubicacion de la iglesia",
   addressRoutesTitle: "¿Cómo llegar en transporte público?",
-  addressRoutesText: "Puedes tomar cualquiera de las siguientes rutas y quedarte en la parada de buses DAILY",
+  addressRoutesText:
+    "Puedes tomar cualquiera de las siguientes rutas y quedarte en la parada de buses DAILY",
+  videoTitle: "Saludo Pastoral",
+  videoAltText: "Click para ver saludo pastoral",
 };
 
 export default function Home() {
@@ -37,7 +41,7 @@ export default function Home() {
             <Banner
               title={translations.bannerTitle}
               subtitle={translations.bannerSubtitle}
-              image="/img/banner2.jpg"
+              image="/img/banner4.jpg"
               text={translations.bannerText}
             />
             <Schedules
@@ -60,6 +64,11 @@ export default function Home() {
                 { route: "61", color: "yellow" },
                 { route: "64", color: "red" },
               ]}
+            />
+            <VideoContainer
+              videoId="lm2EDFrnLx0"
+              header={translations.videoTitle}
+              className="container-primary"
             />
           </Container>
         </main>
