@@ -15,3 +15,11 @@
 .navigation .navigationItem {
   padding: 30px 20px;
 }
+
+.mobile {
+  color: black;
+}
+
+.navigation.mobile {
+  margin-right: 0px;
+}
