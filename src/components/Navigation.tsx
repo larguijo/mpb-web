@@ -2,8 +2,8 @@ import { Navbar, Nav } from "rsuite";
 import styles from "@/styles/Navigation.module.css";
 
 const navigationOptions = [
-  { label: "Nuestra Iglesia", href: "#" },
-  { label: "Ministerios", href: "#" },
+  { label: "Nuestra Iglesia", href: "/acerca-de" },
+  { label: "Ministerios", href: "/ministerios" },
 ];
 const Navigation = () => {
   return (
