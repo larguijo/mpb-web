@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Container } from "rsuite";
 import Address from "@/components/Address";
 import Banner from "@/components/Banner";
+import IntroText from "@/components/IntroText";
 import Schedules from "@/components/Schedules";
 import VideoContainer from "@/components/VideoContainer";
 import styles from "@/styles/Home.module.css";
@@ -24,6 +25,8 @@ const translations = {
     "Puedes tomar cualquiera de las siguientes rutas y quedarte en la parada de buses DAILY",
   videoTitle: "Saludo Pastoral",
   videoAltText: "Click para ver saludo pastoral",
+  socialFacebook: "https://www.facebook.com/MaisondePriereBethlehem",
+  socialInstagram: "https://www.instagram.com/maison_de_priere_bethlehem/",
 };
 
 export default function Home() {
@@ -43,6 +46,15 @@ export default function Home() {
               subtitle={translations.bannerSubtitle}
               image="/img/banner4.jpg"
               text={translations.bannerText}
+            />
+            <IntroText
+              bannerText={translations.pageTitle}
+              bannerSubtext={translations.bannerText}
+              social={{
+                facebook: translations.socialFacebook,
+                instagram: translations.socialInstagram,
+              }}
+              className="container-primary"
             />
             <Schedules
               title={translations.schedulesTitle}

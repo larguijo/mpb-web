@@ -14,7 +14,7 @@ const Header = () => {
         />
       </div>
       <div className={style.navigation}>
-        <Navigation />
+          <Navigation />
       </div>
     </div>
   );
