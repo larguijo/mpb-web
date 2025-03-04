@@ -10,9 +10,9 @@ const Header = () => {
         <Link href="/">
           <Image
             alt="Casa de Oracion Belen"
-            src="/img/logo.jpg"
-            width={60}
-            height={60}
+            src="/img/logo-full-color.png"
+            width={64}
+            height={53}
           />
         </Link>
       </div>
